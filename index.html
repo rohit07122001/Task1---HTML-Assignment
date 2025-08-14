@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dimonds</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #222;
+    }
+
+    header.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5%;
+      border-bottom: 1px solid #eee;
+
+
+    }
+
+    .logo {
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .header-icons i {
+      margin-left: 15px;
+
+
+
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 5%;
+      background: #fafafa;
+
+
+
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+
+    }
+
+    .hero .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .side-ring {
+      width: 300px;
+    }
+
+    .collection {
+      padding: 50px 5%;
+      text-align: center;
+    }
+
+    .collection-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .collection-item img {
+      width: 100%;
+
+      border-radius: 5px;
+    }
+
+    .diamonds {
+      text-align: center;
+
+      padding: 50px 5%;
+    }
+
+    .diamond-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 5px;
+
+      margin-top: 20px;
+    }
+
+    .diamond {
+      min-width: 150px;
+      
+    }
+
+    .diamond img {
+      width: 100%;
+    }
+
+    .newsletter {
+      display: flex;
+      flex-wrap: wrap;
+
+
+
+      padding: 50px 5%;
+      gap: 20px;
+    }
+
+    .newsletter form {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .newsletter input {
+      padding: 10px;
+      flex: 1;
+    }
+
+    .newsletter button {
+      background: black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+    }
+
+    .newsletter-images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 400px;
+
+      height: 400px;
+      width: 150;
+      margin: auto;
+
+      flex-wrap: wrap;
+    }
+
+    .newsletter-images img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+       text-align: right;
+       object-fit: cover;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: co
+        lumn;
+        text-align: center;
+      }
+      nav {
+        display: none;
+      }
+    }
+
+
+
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        footer {
+            padding: 20px;
+        }
+
+        .brand {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .brand span {
+            color: red;
+            font-size: 14px;
+            display: block;
+            margin-top: 4px;
+        }
+
+        .description {
+            margin: 10px auto;
+            max-width: 500px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+            font-size: 14px;
+
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .partners {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .partners img {
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .legal {
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+
+
+        }
+
+     
+   
+    
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="logo"><span>dimend</span><strong>SCAASI</strong></div>
+  <nav>
+    <a href="#">Diamonds</a>
+    <a href="#">Accessories</a>
+    <a href="#">Fine Jewelry</a>
+    <a href="#">Watches</a>
+  </nav>
+  <div class="header-icons">
+    <i class="fa fa-search"></i>
+    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
+  </div>
+</header>
+
+<!-- Hero Section -->
+
+        <img src="v.webp" alt="Right Ring" class="side-ring right">
+
+<section class="hero">
+  
+  <img src="ring1.webp" alt="left Ring" class="side-ring left">
+
+  <div class="hero-content">
+    
+     <img src="cen.webp" alt="Right Ring" class="side-ring right">
+
+    <h1>Vintage & Antique</h1>
+
+      
+     
+    <p class="price">$4500</p>
+    <p class="offer">Take 20% off for a limited time.<br>Use Code: <strong>LOVE20</strong></p>
+    <button>View Details</button>
+  </div>
+  <img src="ring2.webp" alt="Right Ring" class="side-ring right">
+</section>
+
+<!-- Collection -->
+<section class="collection">
+  <h2>Our Collection</h2>
+  <p>Discover our elegant and unique fine jewelry collections,<br>
+    ranging from classic diamond studs to stylish pendants <br> and dazzling bracelets.</p>
+  <div class="collection-grid">
+    <div class="collection-item">
+      
+      <img src="wedding-rings.webp" alt="">
+      
+    </div>
+    <div class="collection-item">
+      <img src="engagement-rings.webp" alt="">
+      
+    </div>
+    <div class="collection-item">
+      <img src="fine-jewelry.webp" alt="">
+     
+    </div>
+    <div class="collection-item">
+      <img src="latest-rings.webp" alt="">
+      
+      
+    </div>
+  </div>
+</section>
+
+<!-- Loose Diamonds -->
+<section class="diamonds">
+  <h2>Explore Loose Diamonds</h2>
+  <p>Every diamond in our collection is selected for its superior cut,<br> symmetry, and shape.</p>
+  <div class="diamond-slider" id="diamondSlider">
+    <div class="diamond"><img src="round.webp" alt=""><p>Round</p></div>
+    <div class="diamond"><img src="emerald.webp" alt=""><p>Emerald</p></div>
+    <div class="diamond"><img src="round2.webp" alt=""><p>Round</p></div>
+    <div class="diamond"><img src="oval.webp" alt=""><p>Oval</p></div>
+    <div class="diamond"><img src="heart.webp" alt=""><p>Heart</p></div>
+    <div class="diamond"><img src="asscher.webp" alt=""><p>Asscher</p></div>
+    <div class="diamond"><img src="heart2.webp" alt=""><p>Heart</p></div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <div>
+    <h2>Keep In Touch</h2>
+    <p>Our lab created diamonds are the eco-conscious choice,<br>
+and exhibit the same sparkle as natural diamonds.</p>
+
+    <form>
+      <input type="email" placeholder="Enter your email ID" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <div class="newsletter-images">
+    <img src="img1.webp" alt="">
+    <img src="img2.webp" alt="">
+    <img src="img3.webp" alt="">
+    <img src="img4.webp" alt="">
+  </div>
+</section>
+
+<section> <div class="brand">
+        dimendSCAASI
+        <span>20+ Years Of Trust</span>
+    </div>
+
+    <p class="description">
+        dimend SCAASI Jeweler is a unique Jewelry store located in Chicago with an emphasis on great style and exceptional quality.
+    </p>
+
+    <div class="links">
+        <a href="#">Education</a>
+        <a href="#">About Us</a>
+        <a href="#">Customer Care</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="partners">
+        <img src="gia.webp" alt="GIA">
+        <img src="jewelers.webp" alt="Jewelers of America">
+        <img src="jvc.webp" alt="JVC">
+        <img src="bbb.webp" alt="BBB Accredited">
+        <img src="visa.webp" alt="Visa">
+        <img src="mastercard.webp" alt="MasterCard">
+        <img src="discover.webp" alt="Discover">
+        <img src="paypal.webp" alt="PayPal">
+        <img src="amex.webp" alt="Amex">
+    </div>
+
+    <div class="legal">
+        dimendSCAASI™ and innerViews are Registered Trademarks of dimend SCAASI Ltd. © 2010-2020 dimend SCAASI Ltd. | Terms Of Use | Sitemap | Privacy Policy
+    </div></section>
+
+
+
+
+<!-- JavaScript -->
+<script>
+  document.getElementById('diamondSlider').addEventListener('wheel', function(e) {
+    if (e.deltaY > 0) {
+      this.scrollBy({ left: 100, behavior: 'smooth' });
+    } else {
+      this.scrollBy({ left: -100, behavior: 'smooth' });
+    }
+  });
+
+</script>
+
+</body>
+</html>
